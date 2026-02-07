@@ -1,0 +1,51 @@
+# --- Pastas de Build (O que gera o peso de 340MB) ---
+node_modules/
+dist/
+dist-ssr/
+dist-electron/
+release/
+out/
+build/
+
+# --- Binários e Executáveis ---
+*.exe
+*.exe.blockmap
+*.msi
+*.dmg
+*.AppImage
+*.pacman
+
+# --- Logs de Erro ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Variáveis de Ambiente (Segurança) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# --- Diretórios de Editores e Sistema ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Cache e Temporários ---
+.eslintcache
+.stylelintcache
+.vite
+.parcel-cache
+.turbo
