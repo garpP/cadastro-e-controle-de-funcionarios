@@ -10,22 +10,23 @@
 
 ---
 
+## 🔗 Links de Acesso Rápido
+* **🌐 Versão Web (Vercel):** [https://cadastro-e-controle-de-funcionarios.vercel.app/](https://cadastro-e-controle-de-funcionarios.vercel.app/)
+* **📥 Download Direto (.exe):** [Link para o Google Drive](https://drive.google.com/drive/folders/1JQOXlTEnRr_geZj6WqDfXphZgmv_qna9?usp=sharing)
+
+---
+
 ## 📋 1. Funcionamento e Aplicações
 
-O sistema foi desenvolvido para ser uma ferramenta de terminal dedicada, focada na experiência do usuário e na integridade dos dados. 
+O sistema foi desenvolvido para ser uma ferramenta de terminal dedicada, focada na experiência do usuário e na integridade dos dados.
 
-**Nota técnica:** Este projeto é uma base sólida e modular. Embora funcional, ele foi desenhado para permitir um **fácil aprimoramento**, podendo ser rapidamente adaptado para diversas outras funcionalidades e fluxos de trabalho corporativos.
+**Nota técnica:** Este projeto é uma base sólida e modular. Embora funcional, ele foi desenhado para permitir um **fácil aprimoramento**, podendo ser rapidamente adaptado para diversos fluxos de trabalho corporativos.
 
 ### 🔹 Funções Principais
 * **Navegação por Etapas:** Cadastro dividido em 3 passos para evitar fadiga de decisão e erros de digitação.
 * **Persistência em Nuvem:** Integração direta com **Firebase Firestore** para sincronização em tempo real.
 * **Interface Responsiva:** Desenvolvido com **Material UI**, garantindo componentes visuais modernos e acessíveis.
-* **Bloqueio de Ambiente:** O App inicia automaticamente em tela cheia, ocultando barras de tarefas e menus do sistema operacional.
-
-### 🔹 Possíveis Aplicações
-1. **Totens de Autoatendimento:** Ideal para recepções onde o colaborador realiza seu próprio pré-cadastro.
-2. **Estações de RH:** Software dedicado para computadores de uso exclusivo administrativo.
-3. **Controle de Acesso:** Registro rápido de funcionários em canteiros de obras ou eventos corporativos.
+* **Bloqueio de Ambiente:** O App inicia automaticamente em tela cheia (modo Kiosk), ocultando barras de tarefas e menus do sistema operacional.
 
 ---
 
@@ -37,35 +38,38 @@ O aplicativo utiliza uma estratégia de segurança dupla para proteger os dados 
 * **Acesso Administrativo Padrão:**
   * **E-mail:** `admin1029@gmail.com`
   * **Senha:** `adm123`
-* **Validação:** Apenas usuários previamente cadastrados na coleção `funcionarios` com e-mail e senha correspondentes podem acessar a Home. Também é possível criar novas contas através do fluxo de registro.
+* **Validação:** Apenas usuários cadastrados podem acessar a Home. Também é possível criar novas contas através do fluxo de registro.
 
 ### 🔒 Passe de Administrador (Privilégios Elevados)
 Para ações sensíveis e gerenciamento do sistema, utiliza-se o código de segurança: `adm0129384756`.
 
 #### Onde usar o Passe:
-1. **Encerrar Aplicativo:** Na tela de login, clique em **Encerrar Sistema**. O campo para inserção do passe aparecerá via animação `Collapse`.
-2. **Privilégios de Gestão:** Ao clicar no ícone de **engrenagem** no menu lateral, insira o passe de ADM para liberar as seguintes funções:
+1. **Encerrar Aplicativo:** Na tela de login, clique em **Encerrar Sistema**. O campo para inserção do passe aparecerá via animação.
+2. **Privilégios de Gestão:** Ao clicar no ícone de **engrenagem** no menu lateral, insira o passe de ADM para liberar:
    * Criar e excluir departamentos.
-   * Criar, alterar dados e excluir funcionários/usuários.
-   * Gestão completa da base de dados.
+   * Gestão completa da base de dados (Alterar e excluir funcionários).
 
 ---
 
-## 💻 3. Como Executar o App
+## 💻 3. Como Executar o App Localmente
 
-### ⚡ Maneira Rápida
-Para uso imediato, basta baixar e executar o arquivo: 
-`Sistema Cadastro Flugo.exe` https://drive.google.com/drive/folders/1JQOXlTEnRr_geZj6WqDfXphZgmv_qna9?usp=sharing
+Se desejar rodar o projeto em ambiente de desenvolvimento, siga os passos abaixo:
 
-### 🛠️ Modo Desenvolvedor
-Para rodar o projeto localmente e realizar alterações, utilize os comandos abaixo no terminal:
+### 🛠️ Pré-requisitos
+* Node.js instalado (v18 ou superior)
+* Git instalado
 
+### 🚀 Passo a Passo no Terminal
 ```bash
-# 1. Instalar dependências
+# 1. Clone o repositório e acesse a pasta do projeto
+git clone [https://github.com/garpP/cadastro-e-controle-de-funcionarios.git](https://github.com/garpP/cadastro-e-controle-de-funcionarios.git)
+cd cadastro-e-controle-de-funcionarios/cadastro-funcionarios
+
+# 2. Instalar dependências
 npm install
 
-# 2. Rodar o servidor Vite (Frontend)
+# 3. Rodar o servidor Vite (Frontend Web)
 npm run dev
 
-# 3. Rodar o Electron (Janela Desktop) - em um novo terminal
+# 4. Rodar o Electron (Interface Desktop)
 npm run electron:dev
