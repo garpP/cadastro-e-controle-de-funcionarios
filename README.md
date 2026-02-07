@@ -24,6 +24,7 @@ O sistema foi desenvolvido para ser uma ferramenta de terminal dedicada, focada 
 
 ### 🔹 Funções Principais
 * **Navegação por Etapas:** Cadastro dividido em 3 passos para evitar fadiga de decisão e erros de digitação.
+* **Controle** clique na engrenagem no menu lateral e insira o Admin pass (adm0129384756) para ativar os privilegios de ADM podendo assim eiditar alterar e apagar varios campos informações e seções criadas por vc msm no app.
 * **Persistência em Nuvem:** Integração direta com **Firebase Firestore** para sincronização em tempo real.
 * **Interface Responsiva:** Desenvolvido com **Material UI**, garantindo componentes visuais modernos e acessíveis.
 * **Bloqueio de Ambiente:** O App inicia automaticamente em tela cheia (modo Kiosk), ocultando barras de tarefas e menus do sistema operacional.
